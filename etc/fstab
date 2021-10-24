@@ -1,0 +1,37 @@
+UUID=5e6726e5-d538-4b1e-b5a9-a505d5984470 / ext4 relatime 0 1
+
+UUID=A4FB-CAA5 /boot vfat nosuid,nodev,noexec,noatime,fmask=0177,dmask=0077 0 2
+
+/dev/disk/by-label/Data /media/ides3rt/Data ext4 nosuid,nodev,noatime 0 0
+
+/media/ides3rt/Data/Applications /home/ides3rt/Applications none bind 0 0
+
+/media/ides3rt/Data/Documents /home/ides3rt/Documents none bind 0 0
+
+/media/ides3rt/Data/Downloads /home/ides3rt/Downloads none bind 0 0
+
+/media/ides3rt/Data/GitHub /home/ides3rt/GitHub none bind 0 0
+
+/media/ides3rt/Data/Music /home/ides3rt/Music none bind 0 0
+
+/media/ides3rt/Data/Pictures /home/ides3rt/Pictures none bind 0 0
+
+/media/ides3rt/Data/Code /home/ides3rt/Code none bind 0 0
+
+/media/ides3rt/Data/Videos /home/ides3rt/Videos none bind 0 0
+
+/dev/disk/by-label/Ventoy /media/ides3rt/Ventoy exfat user,nosuid,nodev,noexec,noauto,noatime,uid=ides3rt,gid=ides3rt,fmask=0177,dmask=0077 0 0
+
+/dev/disk/by-label/USB1P1 /media/ides3rt/USB1p1 vfat user,nosuid,nodev,noexec,noauto,noatime,uid=ides3rt,gid=ides3rt,fmask=0177,dmask=0077 0 0
+
+/dev/mapper/USB1p2 /media/ides3rt/USB1p2 ext4 user,nosuid,nodev,noexec,noauto,noatime 0 0
+
+tmpfs /tmp tmpfs nosuid,nodev,noatime,size=15% 0 0
+
+tmpfs /dev/shm tmpfs nosuid,nodev,noexec,noatime,size=5% 0 0
+
+dev /dev devtmpfs nosuid,size=32M 0 0
+
+run /run tmpfs nosuid,nodev,size=64M 0 0
+
+proc /proc proc nosuid,nodev,noexec,hidepid=2,gid=proc 0 0
