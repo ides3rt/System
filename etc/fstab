@@ -1,8 +1,10 @@
-UUID=5e6726e5-d538-4b1e-b5a9-a505d5984470 / ext4 relatime 0 1
+UUID=5e6726e5-d538-4b1e-b5a9-a505d5984470 / ext4 noatime,errors=remount-ro 0 1
 
 UUID=A4FB-CAA5 /boot vfat nosuid,nodev,noexec,noatime,fmask=0177,dmask=0077 0 2
 
-/dev/disk/by-label/Data /media/ides3rt/Data ext4 nosuid,nodev,noatime 0 0
+/swapfile none swap sw 0 0
+
+/dev/disk/by-label/Data /media/ides3rt/Data ext4 nosuid,nodev,noatime,errors=remount-ro 0 2
 
 /media/ides3rt/Data/Applications /home/ides3rt/Applications none bind 0 0
 
@@ -24,7 +26,7 @@ UUID=A4FB-CAA5 /boot vfat nosuid,nodev,noexec,noatime,fmask=0177,dmask=0077 0 2
 
 /dev/disk/by-label/USB1P1 /media/ides3rt/USB1p1 vfat user,nosuid,nodev,noexec,noauto,noatime,uid=ides3rt,gid=ides3rt,fmask=0177,dmask=0077 0 0
 
-/dev/mapper/USB1p2 /media/ides3rt/USB1p2 ext4 user,nosuid,nodev,noexec,noauto,noatime 0 0
+/dev/mapper/USB1p2 /media/ides3rt/USB1p2 ext4 user,nosuid,nodev,noexec,noauto,noatime,errors=remount-ro 0 0
 
 tmpfs /tmp tmpfs nosuid,nodev,noatime,size=15% 0 0
 
