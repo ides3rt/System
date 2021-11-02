@@ -7,4 +7,4 @@ Target = bash
 Depends = dash
 Description = Syslink dash to /bin/sh...
 When = PostTransaction
-Exec = /usr/bin/ln -sfT /bin/dash /bin/sh
+Exec = /usr/bin/ln -sfT dash /bin/sh
