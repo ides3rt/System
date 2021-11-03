@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = nvidia-dkms
+[Action]
+Description = Update nvidia modules in mkinitcpio...
+When = PostTransaction
+Exec = /usr/bin/nvidia-modprobe; /usr/bin/mkinitcpio -P
