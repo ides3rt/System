@@ -26,7 +26,7 @@ UUID=A4FB-CAA5 /boot vfat nosuid,nodev,noexec,noatime,fmask=0177,dmask=0077 0 2
 
 /dev/disk/by-label/USB1P1 /media/ides3rt/USB1p1 vfat user,nosuid,nodev,noexec,noauto,noatime,uid=ides3rt,gid=ides3rt,fmask=0177,dmask=0077 0 0
 
-/dev/mapper/USB1p2 /media/ides3rt/USB1p2 ext4 user,nosuid,nodev,noexec,noauto,noatime,errors=remount-ro 0 0
+/dev/disk/by-label/USB1p2 /media/ides3rt/USB1p2 ext4 user,nosuid,nodev,noexec,noauto,noatime,errors=remount-ro 0 0
 
 tmpfs /tmp tmpfs nosuid,nodev,noatime,size=15% 0 0
 
