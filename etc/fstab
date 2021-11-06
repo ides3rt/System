@@ -6,6 +6,8 @@ UUID=A4FB-CAA5 /boot vfat nosuid,nodev,noexec,noatime,fmask=0177,dmask=0077 0 2
 
 /dev/disk/by-label/Data /media/ides3rt/Data ext4 nosuid,nodev,noatime,errors=remount-ro 0 2
 
+/media/ides3rt/Data/AUR /home/ides3rt/AUR none bind 0 0
+
 /media/ides3rt/Data/Applications /home/ides3rt/Applications none bind 0 0
 
 /media/ides3rt/Data/Documents /home/ides3rt/Documents none bind 0 0
