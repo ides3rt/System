@@ -36,6 +36,8 @@ tmpfs /tmp tmpfs nosuid,nodev,noatime,size=15% 0 0
 
 tmpfs /dev/shm tmpfs nosuid,nodev,noexec,noatime,size=5% 0 0
 
+/dev/shm /run/shm none bind,X-mount.mkdir 0 0
+
 dev /dev devtmpfs nosuid,size=32M 0 0
 
 run /run tmpfs nosuid,nodev,size=64M 0 0
