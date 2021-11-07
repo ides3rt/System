@@ -1,10 +1,10 @@
-UUID=5e6726e5-d538-4b1e-b5a9-a505d5984470 / ext4 noatime,errors=remount-ro,journal_async_commit 0 1
+UUID=5e6726e5-d538-4b1e-b5a9-a505d5984470 / ext4 noatime,journal_async_commit,errors=remount-ro 0 1
 
 UUID=A4FB-CAA5 /boot vfat nosuid,nodev,noexec,noatime,fmask=0177,dmask=0077 0 2
 
 /swapfile none swap sw 0 0
 
-/dev/disk/by-label/Data /media/ides3rt/Data ext4 nosuid,nodev,noatime,errors=remount-ro,journal_async_commit 0 2
+/dev/disk/by-label/Data /media/ides3rt/Data ext4 nosuid,nodev,noatime,journal_async_commit,errors=remount-ro 0 2
 
 /media/ides3rt/Data/AUR /home/ides3rt/AUR none bind,X-mount.mkdir 0 0
 
@@ -42,4 +42,4 @@ dev /dev devtmpfs nosuid,size=32M 0 0
 
 run /run tmpfs nosuid,nodev,size=64M 0 0
 
-proc /proc proc nosuid,nodev,noexec,hidepid=2,gid=proc 0 0
+proc /proc proc nosuid,nodev,noexec,gid=proc,hidepid=2 0 0
