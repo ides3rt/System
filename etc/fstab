@@ -18,25 +18,25 @@ UUID=56e3f62b-2131-480b-bad3-29367d1adf66 /var btrfs noatime,compress-force=zstd
 
 /dev/disk/by-label/Data /media/ides3rt/Data ext4 nosuid,nodev,noatime,journal_async_commit,errors=remount-ro 0 2
 
-/media/ides3rt/Data/AUR /home/ides3rt/AUR none bind,X-mount.mkdir 0 0
+/media/ides3rt/Data/Applications /home/ides3rt/Applications none bind 0 0
 
-/media/ides3rt/Data/Applications /home/ides3rt/Applications none bind,X-mount.mkdir 0 0
+/media/ides3rt/Data/AUR /home/ides3rt/AUR none bind 0 0
 
-/media/ides3rt/Data/Documents /home/ides3rt/Documents none bind,X-mount.mkdir 0 0
+/media/ides3rt/Data/Code /home/ides3rt/Code none bind 0 0
 
-/media/ides3rt/Data/Downloads /home/ides3rt/Downloads none bind,X-mount.mkdir 0 0
+/media/ides3rt/Data/Documents /home/ides3rt/Documents none bind 0 0
 
-/media/ides3rt/Data/GitHub /home/ides3rt/GitHub none bind,X-mount.mkdir 0 0
+/media/ides3rt/Data/Downloads /home/ides3rt/Downloads none bind 0 0
 
-/media/ides3rt/Data/Music /home/ides3rt/Music none bind,X-mount.mkdir 0 0
+/media/ides3rt/Data/GitHub /home/ides3rt/GitHub none bind 0 0
 
-/media/ides3rt/Data/Pictures /home/ides3rt/Pictures none bind,X-mount.mkdir 0 0
+/media/ides3rt/Data/Music /home/ides3rt/Music none bind 0 0
 
-/media/ides3rt/Data/Code /home/ides3rt/Code none bind,X-mount.mkdir 0 0
+/media/ides3rt/Data/Pictures /home/ides3rt/Pictures none bind 0 0
 
-/media/ides3rt/Data/Src /home/ides3rt/Src none bind,X-mount.mkdir 0 0
+/media/ides3rt/Data/Src /home/ides3rt/Src none bind 0 0
 
-/media/ides3rt/Data/Videos /home/ides3rt/Videos none bind,X-mount.mkdir 0 0
+/media/ides3rt/Data/Videos /home/ides3rt/Videos none bind 0 0
 
 /dev/disk/by-label/Ventoy /media/ides3rt/Ventoy exfat user,nosuid,nodev,noexec,noauto,noatime,uid=ides3rt,gid=ides3rt,fmask=0177,dmask=0077 0 0
 
@@ -44,13 +44,13 @@ UUID=56e3f62b-2131-480b-bad3-29367d1adf66 /var btrfs noatime,compress-force=zstd
 
 /dev/disk/by-label/USB1p2 /media/ides3rt/USB1p2 ext4 user,nosuid,nodev,noexec,noauto,noatime,errors=remount-ro 0 0
 
-tmpfs /run/tmp tmpfs nosuid,nodev,noatime,size=15%,X-mount.mkdir 0 0
+tmpfs /tmp tmpfs nosuid,nodev,noatime,size=15% 0 0
 
-/run/tmp /tmp none bind 0 0
+/tmp /run/tmp none bind 0 0
 
-tmpfs /run/shm tmpfs nosuid,nodev,noexec,noatime,size=5%,X-mount.mkdir 0 0
+tmpfs /dev/shm tmpfs nosuid,nodev,noexec,noatime,size=5% 0 0
 
-/run/shm /dev/shm none bind 0 0
+/dev/shm /run/shm none bind 0 0
 
 dev /dev devtmpfs nosuid,size=32M 0 0
 
