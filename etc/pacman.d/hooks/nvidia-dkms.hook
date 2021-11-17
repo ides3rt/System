@@ -7,4 +7,4 @@ Target = nvidia-dkms
 [Action]
 Description = Update nvidia modules in mkinitcpio...
 When = PostTransaction
-Exec = /usr/bin/nvidia-modprobe; /usr/bin/mkinitcpio -P
+Exec = /usr/bin/mkinitcpio -P
