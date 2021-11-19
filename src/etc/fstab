@@ -16,23 +16,23 @@ UUID=56e3f62b-2131-480b-bad3-29367d1adf66 /usr/local btrfs noatime,compress-forc
 
 UUID=56e3f62b-2131-480b-bad3-29367d1adf66 /var btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=257 0 0
 
-LABEL=Data /media/ides3rt/Data ext4 nosuid,nodev,noatime,journal_async_commit,errors=remount-ro 0 2
+LABEL=Main\040Data /media/ides3rt/Main\040Data ext4 nosuid,nodev,noatime,journal_async_commit,errors=remount-ro 0 2
 
-/media/ides3rt/Data/home/aur /home/ides3rt/aur none bind 0 0
+/media/ides3rt/Main\040Data/home/aur /home/ides3rt/aur none bind 0 0
 
-/media/ides3rt/Data/home/ex /home/ides3rt/ex none bind 0 0
+/media/ides3rt/Main\040Data/home/dl /home/ides3rt/dl none bind 0 0
 
-/media/ides3rt/Data/home/doc /home/ides3rt/doc none bind 0 0
+/media/ides3rt/Main\040Data/home/doc /home/ides3rt/doc none bind 0 0
 
-/media/ides3rt/Data/home/dl /home/ides3rt/dl none bind 0 0
+/media/ides3rt/Main\040Data/home/ex /home/ides3rt/ex none bind 0 0
 
-/media/ides3rt/Data/home/gh /home/ides3rt/gh none bind 0 0
+/media/ides3rt/Main\040Data/home/gh /home/ides3rt/gh none bind 0 0
 
-/media/ides3rt/Data/home/pic /home/ides3rt/pic none bind 0 0
+/media/ides3rt/Main\040Data/home/pic /home/ides3rt/pic none bind 0 0
 
-/media/ides3rt/Data/home/src /home/ides3rt/src none bind 0 0
+/media/ides3rt/Main\040Data/home/src /home/ides3rt/src none bind 0 0
 
-/media/ides3rt/Data/home/vid /home/ides3rt/vid none bind 0 0
+/media/ides3rt/Main\040Data/home/vid /home/ides3rt/vid none bind 0 0
 
 LABEL=Ventoy /media/ides3rt/Ventoy exfat user,nosuid,nodev,noexec,noauto,noatime,uid=ides3rt,gid=ides3rt,fmask=0177,dmask=0077 0 0
 
