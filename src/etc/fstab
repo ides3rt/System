@@ -28,7 +28,7 @@ LABEL=Main\040Data /media/ides3rt/Main\040Data ext4 nosuid,nodev,noatime,journal
 
 /media/ides3rt/Main\040Data/home/gh /home/ides3rt/gh none bind 0 0
 
-/media/ides3rt/Main\040Data/home/pic /home/ides3rt/pic none bind 0 0
+/media/ides3rt/Main\040Data/home/pix /home/ides3rt/pix none bind 0 0
 
 /media/ides3rt/Main\040Data/home/src /home/ides3rt/src none bind 0 0
 
