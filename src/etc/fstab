@@ -26,7 +26,7 @@ tmpfs /tmp tmpfs nosuid,nodev,noatime,size=15% 0 0
 
 /tmp /run/tmp none bind 0 0
 
-tmpfs /dev/shm tmpfs nosuid,nodev,noexec,noatime,size=5% 0 0
+tmpfs /dev/shm tmpfs nosuid,nodev,noatime,size=5% 0 0
 
 /dev/shm /run/shm none bind 0 0
 
