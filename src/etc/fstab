@@ -1,18 +1,18 @@
-UUID=b172d673-f416-4429-9cd2-03abde2cb6b2 / btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=256 0 0
+UUID=b8799cd3-87a8-4d05-86ae-b18d980265fa / btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=256 0 0
 
-UUID=F266-F065 /boot vfat nosuid,nodev,noexec,noatime,fmask=0177,dmask=0077 0 1
+UUID=957C-A664 /boot vfat nosuid,nodev,noexec,noatime,fmask=0177,dmask=0077,discard 0 1
 
-UUID=b172d673-f416-4429-9cd2-03abde2cb6b2 /home btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=257 0 0
+UUID=b8799cd3-87a8-4d05-86ae-b18d980265fa /home btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=257 0 0
 
-UUID=b172d673-f416-4429-9cd2-03abde2cb6b2 /opt btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=258 0 0
+UUID=b8799cd3-87a8-4d05-86ae-b18d980265fa /opt btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=258 0 0
 
-UUID=b172d673-f416-4429-9cd2-03abde2cb6b2 /srv btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=260 0 0
+UUID=b8799cd3-87a8-4d05-86ae-b18d980265fa /srv btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=259 0 0
 
-UUID=b172d673-f416-4429-9cd2-03abde2cb6b2 /usr/local btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=261 0 0
+UUID=b8799cd3-87a8-4d05-86ae-b18d980265fa /usr/local btrfs noatime,compress-force=zstd:1,ssd,discard=async,space_cache=v2,autodefrag,subvolid=260 0 0
 
-UUID=b172d673-f416-4429-9cd2-03abde2cb6b2 /var btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=263 0 0
+UUID=b8799cd3-87a8-4d05-86ae-b18d980265fa /var btrfs noatime,compress-force=zstd:1,ssd,discard=async,space_cache=v2,autodefrag,subvolid=261 0 0
 
-/dev/mapper/Main\x20Data /media/ides3rt/Main\040Data ext4 nosuid,nodev,noatime,journal_async_commit,errors=remount-ro 0 2
+LABEL=Main\040Data /media/ides3rt/Main\040Data ext4 nosuid,nodev,noatime,journal_async_commit,errors=remount-ro 0 2
 
 /media/ides3rt/Main\040Data/ides3rt /home/ides3rt none bind 0 0
 
@@ -26,7 +26,7 @@ tmpfs /tmp tmpfs nosuid,nodev,noatime,size=15% 0 0
 
 /tmp /run/tmp none bind 0 0
 
-tmpfs /dev/shm tmpfs nosuid,nodev,noatime,size=5% 0 0
+tmpfs /dev/shm tmpfs nosuid,nodev,noexec,noatime,size=5% 0 0
 
 /dev/shm /run/shm none bind 0 0
 
