@@ -8,9 +8,9 @@ UUID=b8799cd3-87a8-4d05-86ae-b18d980265fa /opt btrfs noatime,compress-force=zstd
 
 UUID=b8799cd3-87a8-4d05-86ae-b18d980265fa /srv btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=259 0 0
 
-UUID=b8799cd3-87a8-4d05-86ae-b18d980265fa /usr/local btrfs noatime,compress-force=zstd:1,ssd,discard=async,space_cache=v2,autodefrag,subvolid=260 0 0
+UUID=b8799cd3-87a8-4d05-86ae-b18d980265fa /usr/local btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=260 0 0
 
-UUID=b8799cd3-87a8-4d05-86ae-b18d980265fa /var btrfs noatime,compress-force=zstd:1,ssd,discard=async,space_cache=v2,autodefrag,subvolid=261 0 0
+UUID=b8799cd3-87a8-4d05-86ae-b18d980265fa /var btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=261 0 0
 
 LABEL=Main\040Data /media/ides3rt/Main\040Data ext4 nosuid,nodev,noatime,journal_async_commit,errors=remount-ro 0 2
 
