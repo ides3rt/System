@@ -1,0 +1,12 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = *linux*
+Target = *ucode*
+Target = *mkinitcpio*
+[Action]
+Description = Mounting /boot...
+When = PreTransaction
+Exec = /usr/bin/mount /boot

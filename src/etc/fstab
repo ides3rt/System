@@ -1,6 +1,6 @@
 UUID=b8799cd3-87a8-4d05-86ae-b18d980265fa / btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=256 0 0
 
-UUID=957C-A664 /boot vfat nosuid,nodev,noexec,noatime,fmask=0177,dmask=0077,discard 0 1
+UUID=957C-A664 /boot vfat nosuid,nodev,noexec,noauto,noatime,fmask=0177,dmask=0077,discard 0 1
 
 UUID=b8799cd3-87a8-4d05-86ae-b18d980265fa /home btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=257 0 0
 
@@ -22,11 +22,11 @@ LABEL=USB1P1 /media/ides3rt/USB1p1 exfat user,nosuid,nodev,noexec,noauto,noatime
 
 LABEL=USB1p2 /media/ides3rt/USB1p2 ext4 user,nosuid,nodev,noexec,noauto,noatime,errors=remount-ro 0 0
 
-tmpfs /tmp tmpfs nosuid,nodev,noatime,size=15% 0 0
+tmpfs /tmp tmpfs nosuid,nodev,noatime,size=6G 0 0
 
 /tmp /run/tmp none bind 0 0
 
-tmpfs /dev/shm tmpfs nosuid,nodev,noexec,noatime,size=5% 0 0
+tmpfs /dev/shm tmpfs nosuid,nodev,noexec,noatime,size=1G 0 0
 
 /dev/shm /run/shm none bind 0 0
 
