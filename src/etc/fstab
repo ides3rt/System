@@ -24,7 +24,7 @@ LABEL=USB1P1 /media/ides3rt/USB1p1 exfat user,nosuid,nodev,noexec,noauto,noatime
 
 LABEL=USB1p2 /media/ides3rt/USB1p2 ext4 user,nosuid,nodev,noexec,noauto,noatime,errors=remount-ro 0 0
 
-tmpfs /tmp tmpfs nosuid,nodev,noatime,size=6G 0 0
+tmpfs /tmp tmpfs nosuid,nodev,noatime,size=8G 0 0
 
 /tmp /run/tmp none bind 0 0
 
@@ -32,8 +32,8 @@ tmpfs /dev/shm tmpfs nosuid,nodev,noexec,noatime,size=1G 0 0
 
 /dev/shm /run/shm none bind 0 0
 
-dev /dev devtmpfs nosuid,size=32M 0 0
+dev /dev devtmpfs nosuid,noexec,size=0% 0 0
 
-run /run tmpfs nosuid,nodev,size=1G 0 0
+run /run tmpfs nosuid,nodev,noexec,size=1G 0 0
 
 proc /proc proc nosuid,nodev,noexec,gid=proc,hidepid=2 0 0
