@@ -1,0 +1,9 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = rustup
+[Action]
+Description = Updating rustup...
+When = PostTransaction
+Exec = /bin/sh -c 'rustup update stable; rustup self upgrade-data'
