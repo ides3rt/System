@@ -6,6 +6,7 @@ Type = Package
 Target = *linux*
 Target = *ucode*
 Target = *mkinitcpio*
+Target = *systemd*
 [Action]
 Description = Unmounting /boot...
 When = PostTransaction
