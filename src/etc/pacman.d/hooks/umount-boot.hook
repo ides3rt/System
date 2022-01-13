@@ -8,6 +8,7 @@ Target = *ucode*
 Target = *mkinitcpio*
 Target = *systemd*
 Target = *cryptsetup*
+Target = *progs*
 [Action]
 Description = Unmounting /boot...
 When = PostTransaction
