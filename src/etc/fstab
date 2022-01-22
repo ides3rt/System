@@ -2,7 +2,7 @@ UUID=b8799cd3-87a8-4d05-86ae-b18d980265fa / btrfs noatime,compress-force=zstd:1,
 
 LABEL=EFI /boot vfat nosuid,nodev,noexec,noauto,noatime,fmask=0177,dmask=0077,discard 0 1
 
-/swapfile none swap sw 0 0
+/dev/zram0 none swap sw 0 0
 
 UUID=b8799cd3-87a8-4d05-86ae-b18d980265fa /home btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=257 0 0
 
