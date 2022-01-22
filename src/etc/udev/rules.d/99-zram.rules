@@ -1,1 +1,6 @@
-KERNEL=="zram0", ATTR{disksize}="1G" RUN="/usr/bin/mkswap /dev/zram0", TAG+="systemd"
+KERNEL=="zram0", ATTR{comp_algorithm}="zstd", ATTR{disksize}="5G", RUN="/sbin/mkswap /dev/zram0", TAG+="systemd"
+KERNEL=="zram1", ATTR{comp_algorithm}="zstd", ATTR{disksize}="5G", RUN="/sbin/mkswap /dev/zram1", TAG+="systemd"
+KERNEL=="zram2", ATTR{comp_algorithm}="zstd", ATTR{disksize}="5G", RUN="/sbin/mkswap /dev/zram2", TAG+="systemd"
+KERNEL=="zram3", ATTR{comp_algorithm}="zstd", ATTR{disksize}="5G", RUN="/sbin/mkswap /dev/zram3", TAG+="systemd"
+KERNEL=="zram4", ATTR{comp_algorithm}="zstd", ATTR{disksize}="5G", RUN="/sbin/mkswap /dev/zram4", TAG+="systemd"
+KERNEL=="zram5", ATTR{comp_algorithm}="zstd", ATTR{disksize}="5G", RUN="/sbin/mkswap /dev/zram5", TAG+="systemd"
