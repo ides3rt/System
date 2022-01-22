@@ -4,16 +4,6 @@ LABEL=EFI /boot vfat nosuid,nodev,noexec,noauto,noatime,fmask=0177,dmask=0077,di
 
 /dev/zram0 none swap pri=32767 0 0
 
-/dev/zram1 none swap pri=32767 0 0
-
-/dev/zram2 none swap pri=32767 0 0
-
-/dev/zram3 none swap pri=32767 0 0
-
-/dev/zram4 none swap pri=32767 0 0
-
-/dev/zram5 none swap pri=32767 0 0
-
 UUID=b8799cd3-87a8-4d05-86ae-b18d980265fa /home btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=257 0 0
 
 UUID=b8799cd3-87a8-4d05-86ae-b18d980265fa /opt btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,autodefrag,subvolid=258 0 0
