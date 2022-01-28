@@ -1,12 +1,16 @@
 [Match]
 Name=*
+
 [Network]
 DHCP=yes
 IPv6AcceptRA=true
+DNSOverTLS=yes
+DNSSEC=yes
+DNS=45.90.28.0#3579e8.dns1.nextdns.io
+DNS=2a07:a8c0::#3579e8.dns1.nextdns.io
+
 [DHCP]
 UseDNS=false
+
 [IPv6AcceptRA]
 UseDNS=false
-[Link]
-MACAddressPolicy=random
-NamePolicy=kernel database onboard slot path
