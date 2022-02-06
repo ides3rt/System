@@ -1,6 +1,6 @@
 UUID=3e21f4e2-9590-454b-bfec-443f2f78b1e1 / btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2 0 0
 
-LABEL=EFI /boot vfat nosuid,nodev,noexec,noatime,fmask=0177,dmask=0077 0 1
+LABEL=EFI /boot vfat nosuid,nodev,noexec,noauto,noatime,fmask=0177,dmask=0077 0 1
 
 /dev/zram0 none swap pri=32767 0 0
 
