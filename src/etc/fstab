@@ -4,10 +4,6 @@ LABEL=EFI /boot vfat nosuid,nodev,noexec,noauto,noatime,fmask=0177,dmask=0077 0 
 
 /dev/zram0 none swap pri=32767 0 0
 
-UUID=3e21f4e2-9590-454b-bfec-443f2f78b1e1 /opt btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/opt 0 0
-
-UUID=3e21f4e2-9590-454b-bfec-443f2f78b1e1 /root btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/root 0 0
-
 UUID=3e21f4e2-9590-454b-bfec-443f2f78b1e1 /usr/local btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/usr/local 0 0
 
 UUID=3e21f4e2-9590-454b-bfec-443f2f78b1e1 /var/cache btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/cache 0 0
