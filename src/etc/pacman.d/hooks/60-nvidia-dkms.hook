@@ -3,8 +3,9 @@ Operation = Install
 Operation = Upgrade
 Operation = Remove
 Type = Package
-Target = *
+Target = nvidia-dkms
+
 [Action]
-Description = Cleaning pacman cache...
+Description = Updating nvidia modules in mkinitcpio...
 When = PostTransaction
-Exec = /usr/bin/paccache -r
+Exec = /usr/bin/mkinitcpio -P

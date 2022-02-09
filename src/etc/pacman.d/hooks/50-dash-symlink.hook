@@ -3,8 +3,9 @@ Operation = Install
 Operation = Upgrade
 Type = Package
 Target = bash
+
 [Action]
 Depends = dash
-Description = Syslink dash to /bin/sh...
+Description = Symlink dash to /bin/sh...
 When = PostTransaction
 Exec = /usr/bin/ln -sfT dash /bin/sh
