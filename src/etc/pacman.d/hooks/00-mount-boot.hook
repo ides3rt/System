@@ -9,8 +9,9 @@ Target = *mkinitcpio*
 Target = *systemd*
 Target = *cryptsetup*
 Target = *progs*
+Target = ostree
 
 [Action]
-Description = Unmounting /boot...
-When = PostTransaction
-Exec = /usr/bin/umount /boot
+Description = Mounting /boot...
+When = PreTransaction
+Exec = /usr/bin/mount /boot
