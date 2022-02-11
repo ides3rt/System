@@ -8,6 +8,8 @@ UUID=6e34e93b-4cb0-4d42-8d04-234bb886e08f /usr/local btrfs noatime,compress-forc
 
 UUID=6e34e93b-4cb0-4d42-8d04-234bb886e08f /var/cache btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/cache 0 0
 
+UUID=6e34e93b-4cb0-4d42-8d04-234bb886e08f /var/lib/libvirt/images btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/lib/libvirt/images 0 0
+
 UUID=6e34e93b-4cb0-4d42-8d04-234bb886e08f /var/local btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/local 0 0
 
 UUID=6e34e93b-4cb0-4d42-8d04-234bb886e08f /var/log btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/log 0 0
