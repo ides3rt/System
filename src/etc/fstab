@@ -1,28 +1,36 @@
-UUID=6e34e93b-4cb0-4d42-8d04-234bb886e08f / btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2 0 0
+UUID=9ac62fb5-66e8-43a6-bfd5-c330a78bb986 / btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2 0 0
 
-UUID=3A3B-CD5E /boot vfat nosuid,nodev,noexec,noauto,noatime,fmask=0177,dmask=0077 0 1
+LABEL=ESP /boot vfat nosuid,nodev,noexec,noauto,noatime,fmask=0177,dmask=0077 0 1
 
 /dev/zram0 none swap pri=32767 0 0
 
-UUID=6e34e93b-4cb0-4d42-8d04-234bb886e08f /usr/local btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/usr/local 0 0
+UUID=9ac62fb5-66e8-43a6-bfd5-c330a78bb986 /home btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/home 0 0
 
-UUID=6e34e93b-4cb0-4d42-8d04-234bb886e08f /var/cache btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/cache 0 0
+UUID=9ac62fb5-66e8-43a6-bfd5-c330a78bb986 /opt btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/opt 0 0
 
-UUID=6e34e93b-4cb0-4d42-8d04-234bb886e08f /var/lib/flatpak btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/lib/flatpak 0 0
+UUID=9ac62fb5-66e8-43a6-bfd5-c330a78bb986 /root btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/root 0 0
 
-UUID=6e34e93b-4cb0-4d42-8d04-234bb886e08f /var/lib/libvirt/images btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/lib/libvirt/images 0 0
+UUID=9ac62fb5-66e8-43a6-bfd5-c330a78bb986 /srv btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/srv 0 0
 
-UUID=6e34e93b-4cb0-4d42-8d04-234bb886e08f /var/local btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/local 0 0
+UUID=9ac62fb5-66e8-43a6-bfd5-c330a78bb986 /usr/local btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/usr/local 0 0
 
-UUID=6e34e93b-4cb0-4d42-8d04-234bb886e08f /var/log btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/log 0 0
+UUID=9ac62fb5-66e8-43a6-bfd5-c330a78bb986 /var/cache btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/cache 0 0
 
-UUID=6e34e93b-4cb0-4d42-8d04-234bb886e08f /var/opt btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/opt 0 0
+UUID=9ac62fb5-66e8-43a6-bfd5-c330a78bb986 /var/lib/flatpak btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/lib/flatpak 0 0
 
-UUID=6e34e93b-4cb0-4d42-8d04-234bb886e08f /var/spool btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/spool 0 0
+UUID=9ac62fb5-66e8-43a6-bfd5-c330a78bb986 /var/lib/libvirt/images btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/lib/libvirt/images 0 0
 
-UUID=6e34e93b-4cb0-4d42-8d04-234bb886e08f /var/tmp btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/tmp 0 0
+UUID=9ac62fb5-66e8-43a6-bfd5-c330a78bb986 /var/local btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/local 0 0
 
-UUID=6e34e93b-4cb0-4d42-8d04-234bb886e08f /.snapshots btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/.snapshots 0 0
+UUID=9ac62fb5-66e8-43a6-bfd5-c330a78bb986 /var/log btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/log 0 0
+
+UUID=9ac62fb5-66e8-43a6-bfd5-c330a78bb986 /var/opt btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/opt 0 0
+
+UUID=9ac62fb5-66e8-43a6-bfd5-c330a78bb986 /var/spool btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/spool 0 0
+
+UUID=9ac62fb5-66e8-43a6-bfd5-c330a78bb986 /var/tmp btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/var/tmp 0 0
+
+UUID=9ac62fb5-66e8-43a6-bfd5-c330a78bb986 /.snapshots btrfs noatime,compress-force=zstd:1,discard=async,space_cache=v2,subvol=@/.snapshots 0 0
 
 LABEL=Main\040Data /home/ides3rt ext4 nosuid,nodev,noatime,journal_async_commit,errors=remount-ro 0 2
 
