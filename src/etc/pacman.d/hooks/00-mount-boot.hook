@@ -9,6 +9,7 @@ Target = *mkinitcpio*
 Target = *systemd*
 Target = *cryptsetup*
 Target = *progs*
+Target = *dkms*
 Target = ostree
 
 [Action]
