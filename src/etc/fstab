@@ -1,10 +1,14 @@
-LABEL=Main\040Data /home/ides3rt btrfs nosuid,nodev,noatime,compress-force=zstd:1,space_cache=v2 0 2
+LABEL=Main\040Data /home/ides3rt btrfs nosuid,nodev,noatime,compress-force=zstd:1,space_cache=v2 0 0
+
+LABEL=Main\040Data /home/ides3rt/.cache btrfs nosuid,nodev,noatime,compress-force=zstd:1,space_cache=v2,subvol=@/.cache 0 0
+
+LABEL=Main\040Data /home/ides3rt/Downloads btrfs nosuid,nodev,noatime,compress-force=zstd:1,space_cache=v2,subvol=@/Downloads 0 0
 
 tmpfs /tmp tmpfs nosuid,nodev,noatime,size=6G 0 0
 
 tmpfs /dev/shm tmpfs nosuid,nodev,noexec,noatime,size=1G 0 0
 
-dev /dev devtmpfs nosuid,noexec,size=0K 0 0
+dev /dev devtmpfs nosuid,noexec,size=0k 0 0
 
 tmpfs /run tmpfs nosuid,nodev,noexec,size=1G 0 0
 
