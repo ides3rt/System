@@ -2,15 +2,10 @@
 Operation = Install
 Operation = Upgrade
 Operation = Remove
-Type = Package
-Target = *linux*
-Target = *ucode*
-Target = *mkinitcpio*
-Target = *systemd*
-Target = *cryptsetup*
-Target = *progs*
-Target = *dkms*
-Target = ostree
+Type = Path
+Target = boot/*
+Target = usr/lib/initcpio/*
+Target = usr/lib/modules/*
 
 [Action]
 Description = Unmounting /boot...
