@@ -3,13 +3,3 @@ LABEL=Home /home/user btrfs nosuid,nodev,noatime,compress-force=zstd:1,space_cac
 LABEL=Home /home/user/.cache btrfs nosuid,nodev,noatime,compress-force=zstd:1,space_cache=v2,subvol=@/.cache 0 0
 
 LABEL=Home /home/user/Downloads btrfs nosuid,nodev,noatime,compress-force=zstd:1,space_cache=v2,subvol=@/Downloads 0 0
-
-tmpfs /tmp tmpfs nosuid,nodev,noatime,size=6G 0 0
-
-tmpfs /dev/shm tmpfs nosuid,nodev,noexec,noatime,size=1G 0 0
-
-tmpfs /run tmpfs nosuid,nodev,noexec,size=1G 0 0
-
-devtmpfs /dev devtmpfs nosuid,noexec,size=0k 0 0
-
-proc /proc procfs nosuid,nodev,noexec,gid=proc,hidepid=2 0 0
