@@ -1,5 +1,5 @@
 LABEL=Home /home/user btrfs nosuid,nodev,noatime,compress-force=zstd:1,space_cache=v2 0 0
 
-LABEL=Home /home/user/.cache btrfs nosuid,nodev,noatime,compress-force=zstd:1,space_cache=v2,subvol=@/.cache 0 0
+LABEL=Home /home/user/.cache btrfs nosuid,nodev,noatime,subvol=@/.cache 0 0
 
-LABEL=Home /home/user/Downloads btrfs nosuid,nodev,noatime,compress-force=zstd:1,space_cache=v2,subvol=@/Downloads 0 0
+LABEL=Home /home/user/Downloads btrfs nosuid,nodev,noatime,subvol=@/Downloads 0 0
